@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginForm from './src/components/LoginForm';
+import LoginForm from './components/LoginForm';
 import App from './components/App';
 
 class LoginForm extends React.Component{
@@ -14,4 +14,4 @@ class LoginForm extends React.Component{
         );
 } 
 }
-default export LoginForm;
+ export default LoginForm;
