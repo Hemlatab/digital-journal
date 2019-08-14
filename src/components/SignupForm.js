@@ -1,6 +1,7 @@
 //for forms write class components
 //card and app functional component
 import React from 'react';
+import './SignupForm.css';
 
 class SignupForm extends React.Component{
 

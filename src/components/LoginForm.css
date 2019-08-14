@@ -15,8 +15,9 @@ input[type="password"] {
 }
 
 .login-submit-btn {
-  padding: 5px;
+  padding: 8px;
   background-color: blue;
   border-radius: 10px;
   align-items: center;
+  color: #ffffff;
 }
