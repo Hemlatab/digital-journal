@@ -1,5 +1,6 @@
 //generate this data from the array inside state
 import React from 'React';
+import './JournalCard.css';
 
 class JournalCard extends React.Component{
     render(){

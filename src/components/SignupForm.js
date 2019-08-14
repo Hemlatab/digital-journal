@@ -5,12 +5,17 @@ import './SignupForm.css';
 
 class SignupForm extends React.Component{
 
+    state={
+        username:'',
+        email:'',
+        password:''
+    }
             render(){
                 return(
                     <React.Fragment className="signup-form">
-                        <input type="text" placeholder="Username" /><br />
-                        <input type="text" placeholder="Email" /><br />
-                        <input type="text" placeholder="Password" /><br />
+                        <input type="text" placeholder="Username" onChange={this.username}/><br />
+                        <input type="text" placeholder="Email" onChange={this.email}/><br />
+                        <input type="text" placeholder="Password" onChange={this.password}/><br />
                         <button className="register-btn">Register</button>
 
                     </React.Fragment>
