@@ -1,13 +1,22 @@
-.login-form{
-    padding: 50px;
+.login-form {
+  padding: 50px;
 }
 
-input [type="text"]{
-    padding:5px;
-    background-color:#ffffff;
+input[type="text"] {
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
-.login-submit-btn{
-    padding: 10px;
-    background-color: blue;
+input[type="password"] {
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.login-submit-btn {
+  padding: 5px;
+  background-color: blue;
+  border-radius: 10px;
+  align-items: center;
 }

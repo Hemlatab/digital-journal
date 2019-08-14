@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './LoginForm.css';
 class LoginForm extends React.Component{
     state={
         username:'',
@@ -8,10 +8,9 @@ class LoginForm extends React.Component{
         render(){
             return(
             <React.Fragment className="login-form">
-            <input type="text" placeholder="Username"/>
-            <input type="password" placeholder="Password"/>
-            <a href="#">Login</a>
-            <button className="login-submit-btn">Submit</button>
+            <p><input type="text" placeholder="Username"/></p>
+            <p><input type="password" placeholder="Password"/></p>
+            <button className="login-submit-btn">Login</button>
             </React.Fragment>
         );
 } 

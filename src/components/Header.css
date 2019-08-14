@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+}
+
+.navbar {
+}
+
+.navbar ul {
+  margin: 0;
+  float: right;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+}
