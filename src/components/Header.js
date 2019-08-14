@@ -1,10 +1,9 @@
 import React from 'react';
-import { returnStatement } from '@babel/types';
 
 function Header(){
 
     return(
-        <React.Fragment>
+        <header>
         <h1>Digital Journal <span className="create-note-title">| Create A Note</span></h1>
       <nav className="navbar">
         <ul>
@@ -12,6 +11,8 @@ function Header(){
           <li><a href="./SignupForm.js">Sign Up</a></li>
         </ul>
       </nav>
-        </React.Fragment>
+        </header>
     )
 }
+
+export default Header

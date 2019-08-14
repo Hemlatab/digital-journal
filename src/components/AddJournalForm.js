@@ -4,7 +4,7 @@
 //create a state onchange update state for title n body onchange
 //onsubmit add it to array add body n title to array in state
 //create component for cards journal card
-import React from 'react';
+import React from "react";
 
 class AddJournalForm extends React.Component{
 
@@ -19,3 +19,5 @@ class AddJournalForm extends React.Component{
         )
     }
 }
+export default AddJournalForm
+//need to 2 state
