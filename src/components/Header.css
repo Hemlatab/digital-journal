@@ -1,14 +1,16 @@
-/* .header {
-} */
+.header {
+  display: flex;
+}
 
 .navbar {
-  position: relative;
+  margin-left: auto;
 }
 .navbar ul {
-  margin: 0 auto;
-  float: right;
+  color: blue;
 }
-
+.navbar li {
+  display: inline;
+}
 .navbar ul li {
   list-style: none;
 }
@@ -16,4 +18,5 @@
 .navbar ul li a {
   text-decoration: none;
   color: blue;
+  margin-right: 10px;
 }

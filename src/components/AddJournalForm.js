@@ -12,7 +12,7 @@ class AddJournalForm extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <p>Title: <input type="text" className="journal-title"/></p>
+                Title: <input type="text" className="journal-title"/>
                 Body: <textarea></textarea>
                 <p className="body-para">Use the form above to create a post. Make sure you fill the required title and body field and then press submit.</p>
                 <button className="submit-post-btn">Submit</button>
