@@ -9,6 +9,7 @@ class LoginForm extends React.Component{
             
             return(
             <React.Fragment className="login-form">
+            <h2>Login</h2>
             <p><input type="text" placeholder="Username" onChange={this.username}/></p>
             <p><input type="password" placeholder="Password" onChange={this.password}/></p>
             <button className="login-submit-btn">Login</button>
