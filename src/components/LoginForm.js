@@ -8,18 +8,20 @@ class LoginForm extends React.Component{
         render(){
             
             return(
-            <React.Fragment className="login-form">
+            <div className="login-form">
+            <form>
             <h2>Login</h2>
-            <p><input type="text" placeholder="Username" onChange={this.username}/></p>
-            <p><input type="password" placeholder="Password" onChange={this.password}/></p>
+            <p><input className="input-field" type="text" placeholder="Username" onChange={this.username}/></p>
+            <p><input className="input-field"  type="password" placeholder="Password" onChange={this.password}/></p>
             <button className="login-submit-btn">Login</button>
-            </React.Fragment>
+            </form>
+            </div>
         );
 } 
 }
+
+
  export default LoginForm;
 
- //create 2 properties in state and write handlechange for 2 inputs
- //update username/password in state onchange event
- //sign create 1 prop in state[{username,pwd} for evevry input field
+ 
  
