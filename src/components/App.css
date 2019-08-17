@@ -1,8 +1,15 @@
-.create-note-title{
-  color:gray;
+:root {
+  --primary-color: #008000;
+  --blue: #0080fc;
+  --red: #e9004a;
+  --light-grey: #dff8d5;
+  --light-green: #87ab7b;
+}
+.create-note-title {
+  color: gray;
   font-size: 20px;
   font-weight: lighter;
 }
-.navbar{
+.navbar {
   list-style: none;
 }

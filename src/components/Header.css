@@ -1,7 +1,9 @@
 .header {
   display: flex;
 }
-
+h2 {
+  color: #87ab7b;
+}
 .navbar {
   margin-left: auto;
 }

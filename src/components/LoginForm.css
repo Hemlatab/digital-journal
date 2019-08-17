@@ -1,30 +1,26 @@
 body {
   height: 100%;
 }
-
+h2 {
+  color: #87ab7b;
+}
 .login-form {
   padding: 50px;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
-input[type="text"] {
+.input-field {
   padding: 5px;
-  background-color: #ffffff;
   border-radius: 10px;
-}
-
-input[type="password"] {
-  padding: 5px;
-  background-color: #ffffff;
-  border-radius: 10px;
+  border: 1px solid #008ddf;
 }
 
 .login-submit-btn {
   padding: 8px;
-  background-color: blue;
+  background-color: #0080fc;
   border-radius: 10px;
   align-items: center;
   color: #ffffff;
