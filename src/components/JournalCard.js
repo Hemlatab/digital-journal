@@ -5,9 +5,9 @@ import './JournalCard.css';
 class JournalCard extends React.Component{
     render(){
         return(
-            <React.Fragment>
+            <div>
                 <h1>Journal card</h1>
-            </React.Fragment>
+            </div>
         )
     }
 }

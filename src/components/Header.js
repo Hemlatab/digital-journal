@@ -1,15 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import LoginForm from './LoginForm';
-import SignupForm from './SignupForm';
 import './Header.css';
-
+import {Link} from 'react-router-dom';
  const Header = () => {
 
     return(
-      <Router>
+     
         <header className="header">
-        <h1>Digital Journal <span className="create-note-title">| Create A Note</span></h1>
+        <h1><Link to="/">Digital Journal </Link></h1>
       <nav className="navbar">
         <ul>
           <li><Link to="/LoginForm">Log In </Link></li>
@@ -17,9 +14,8 @@ import './Header.css';
         </ul>
       </nav>
         </header>
-        <Route path="/LoginForm" component={LoginForm} />
-        <Route path="/SignupForm" component={SignupForm} />
-     </Router>
+
+   
     );
 }
 

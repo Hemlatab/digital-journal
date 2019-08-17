@@ -14,14 +14,17 @@ h2 {
 
 .input-field {
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid #008ddf;
+  font-size: 16px;
 }
 
 .login-submit-btn {
+  width: 100%;
   padding: 8px;
   background-color: #0080fc;
-  border-radius: 10px;
+  border-radius: 20px;
   align-items: center;
   color: #ffffff;
+  font-size: 16px;
 }
