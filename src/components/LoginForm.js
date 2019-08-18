@@ -20,8 +20,8 @@ class LoginForm extends React.Component{
             <div className="login-form">
             <form onSubmit={this.handleSubmit}>
             <h2>Login</h2>
-            <p><input className="input-field" name="username" value={username} type="text" placeholder="Username" onChange={this.handleChange}/></p>
-            <p><input className="input-field"  name="password" value={password} type="password" placeholder="Password" onChange={this.handleChange}/></p>
+            <p><input className="input-field" name="username" value={username} type="text" placeholder="Username" onChange={this.handleChange} required /></p>
+            <p><input className="input-field"  name="password" value={password} type="password" placeholder="Password" onChange={this.handleChange} required /></p>
             <button type="submit" className="login-submit-btn">Login</button>
             </form>
             </div>
