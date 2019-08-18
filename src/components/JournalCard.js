@@ -1,15 +1,19 @@
 //generate this data from the array inside state
-import React from 'React';
+import React from 'react';
 import './JournalCard.css';
 
-class JournalCard extends React.Component{
-    render(){
+const JournalCard =(props) => {
+
+//destructure
+    const {title,body} = props;
+
         return(
-            <div>
-                <h1>Journal card</h1>
+            <div className="note-card">
+                <h2>{title}</h2>
+                <p>{body}</p>
             </div>
         )
     }
-}
 
-export default JournalCard
+
+export default JournalCard;
