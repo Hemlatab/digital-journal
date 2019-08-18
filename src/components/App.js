@@ -19,6 +19,7 @@ function App() {
       <Route path="/LoginForm" component={LoginForm} />
       <Route path="/SignupForm" component={SignupForm} />
       </Switch>
+      {/* <Footer /> */}
     </div>
     </Router>
   );

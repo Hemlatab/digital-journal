@@ -4,6 +4,12 @@ form {
   max-width: 400px;
   margin: 0 auto;
 }
+
+.note-title {
+  text-align: center;
+  color: #374955;
+}
+
 input [type="text"] {
   padding: 12px 20px;
 }

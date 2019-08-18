@@ -2,7 +2,7 @@
   min-height: 200px;
   width: 300px;
   box-shadow: 0 0 3px 1px #eae8df;
-  padding: 5px 10px;
+  padding: 5px 20px;
   background-color: #fff;
   border-radius: 6px;
   margin: 10px;
@@ -10,4 +10,25 @@
 .note-card h2 {
   text-align: center;
   margin-top: 6px;
+}
+.note-card ul {
+  list-style: none;
+}
+
+.note-card ul a {
+  text-decoration: none;
+}
+
+.edit {
+  color: #0080fc;
+  display: inline;
+  margin-right: 100px;
+}
+.delete {
+  text-align: right;
+  display: inline;
+}
+
+.delete a {
+  color: red;
 }
