@@ -1,0 +1,13 @@
+.note-card {
+  min-height: 200px;
+  width: 300px;
+  box-shadow: 0 0 3px 1px #eae8df;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin: 10px;
+}
+.note-card h2 {
+  text-align: center;
+  margin-top: 6px;
+}
