@@ -11,8 +11,7 @@ const config ={
     messagingSenderId: "985958482611",
     appId: "1:985958482611:web:6f05be8d075c5100"
   };
-  // Initialize Firebase
-  app.initializeApp(config);
+
 
 class  Firebase{
 constructor(){
@@ -28,7 +27,7 @@ logout(){
     return this.auth.signOut()
 }
 
-async register(email,name,password){
+async register(name,email,password){
     await this.auth.createUserWithEmailAndPassword(email,password)
     return this.auth.currentUser.updateProfile({
         displayName:name

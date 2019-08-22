@@ -4,9 +4,10 @@
   background-color: #006f64;
   color: #e6f4f1;
 }
-.header h1 {
+.header h1 a {
   color: #e6f4f1;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 h2 {

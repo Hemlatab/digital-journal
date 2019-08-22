@@ -1,0 +1,10 @@
+.submit-post-btn {
+  width: 30%;
+  padding: 8px;
+  background-color: #0080fc;
+  color: #f8f8f8;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}

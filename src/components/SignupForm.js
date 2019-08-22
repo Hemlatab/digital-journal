@@ -1,11 +1,14 @@
 import React from 'react';
+import Firebase from './Firebase';
+import withRouter from 'react-dom';
+import Button from './Button';
 import './SignupForm.css';
+import Input from './Input';
 
 class SignupForm extends React.Component{
 //controlled forms
     state={
-        firstname:'',
-        lastname:'',
+        fullname:'',
         email:'',
         password:'',
         confirmPassword:''
@@ -17,27 +20,38 @@ class SignupForm extends React.Component{
         
     }
 
-    handleSubmit = (event)=>{
+    handleSubmit =  async (event)=>{
+
         event.preventDefault();
-console.log(this.state);
+
+        try{
+            await Firebase.register(this.state.fullname,this.state.email,this.state.password)
+    
+        }
+        catch(error){
+            alert(error.message)
+        }
+    
     }
             render(){
-                const {firstname,lastname,email,password,confirmPassword} = this.state
+                const {fullname,email,password,confirmPassword} = this.state
                 return(
 
                     <div className="signup-form">
                     <form onSubmit={this.handleSubmit}>
                     <h2>Signup</h2>
-                        <p><input className="input-field" type="text" name="firstname" value={firstname} placeholder="Firstname" onChange={this.handleChange} required /></p>
-                        <p><input className="input-field" type="text" name="lastname" value={lastname} placeholder="Lastname" onChange={this.handleChange} required /></p>
-                        <p><input className="input-field" type="text" name="email" value={email} placeholder="Email" onChange={this.handleChange} required /></p>
-                        <p><input className="input-field" type="password" name="password" value={password} placeholder="Password" onChange={this.handleChange} required /></p>
-                        <p><input className="input-field" type="password" name="confirmPassword" value={confirmPassword} placeholder="Confirm Password" onChange={this.handleChange} required /></p>
-                        <button type="submit" className="register-btn">Signup</button>
+                    
+                       <Input type="text" name="fullname" value={fullname} placeholder="Fullname" handleChange={this.handleChange} required />
+                       <Input type="email" name="email" value={email} placeholder="email" handleChange={this.handleChange} required />
+                       <Input type="password" name="password" value={password} placeholder="password" handleChange={this.handleChange} required />
+                       <Input type="password" name="confirmPassword" value={confirmPassword} placeholder="confirmPassword" handleChange={this.handleChange} required />
+                        <Button label="Signup"/>
                         </form>
                     </div>
                 )
             }
+
+
 }
 
 export default SignupForm;
