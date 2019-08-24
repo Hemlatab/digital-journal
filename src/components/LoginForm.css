@@ -1,9 +1,10 @@
 body {
   height: 100%;
 }
+
 .login-form h2 {
   text-align: center;
-  color: #87ab7b;
+  color: #ef767a;
 }
 .login-form {
   padding: 50px;
@@ -22,9 +23,9 @@ body {
 
 .login-submit-btn {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   background-color: #0080fc;
-  border-radius: 20px;
+  border-radius: 10px;
   align-items: center;
   color: #ffffff;
   font-size: 16px;

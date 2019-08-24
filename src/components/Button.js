@@ -5,7 +5,7 @@ const Button = (props)=>{
 
     return(
 
-        <button type="submit" className="submit-post-btn">{props.label}</button>
+        <button type="submit" disabled={props.disabled} className="submit-post-btn">{props.label}</button>
     )
 }
 

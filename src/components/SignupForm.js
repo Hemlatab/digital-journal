@@ -1,6 +1,6 @@
 import React from 'react';
 import Firebase from './Firebase';
-import withRouter from 'react-dom';
+import {withRouter} from 'react-router-dom';
 import Button from './Button';
 import './SignupForm.css';
 import Input from './Input';
@@ -54,4 +54,4 @@ class SignupForm extends React.Component{
 
 }
 
-export default SignupForm;
+export default withRouter (SignupForm);

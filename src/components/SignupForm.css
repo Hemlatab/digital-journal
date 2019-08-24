@@ -1,11 +1,13 @@
+body {
+  height: 100%;
+}
 .signup-form h2 {
   text-align: center;
   color: #87ab7b;
 }
 .signup-form {
-  /* width: 50%; */
   margin: 0 auto;
-  max-width: 350px;
+  padding: 50px;
 }
 
 .register-btn {
