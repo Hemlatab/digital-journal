@@ -33,6 +33,21 @@ async register(name,email,password){
         displayName:name
     })
 }
+
+isInitialized() {
+    return new Promise(resolve => {
+        this.auth.onAuthStateChanged(resolve)
+    })
+}
+
+getCurrentUsername() {
+    if(this.auth.currentUser){
+        return {isAuthenticated:true,username:this.auth.currentUser.displayName}
+
+    }
+    return {isAuthenticated:false}
+}
+
 }
 
 export default new Firebase();
