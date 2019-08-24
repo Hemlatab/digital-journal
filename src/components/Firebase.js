@@ -41,12 +41,16 @@ isInitialized() {
 }
 
 getCurrentUsername() {
-    if(this.auth.currentUser){
-        return {isAuthenticated:true,username:this.auth.currentUser.displayName}
-
-    }
-    return {isAuthenticated:false}
+    return this.auth.currentUser && this.auth.currentUser.displayName
 }
+
+// getCurrentUsername() {
+//     if(this.auth.currentUser){
+//         return {isAuthenticated:true,username:this.auth.currentUser.displayName}
+
+//     }
+//     return {isAuthenticated:false}
+// }
 
 }
 

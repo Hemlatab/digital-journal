@@ -4,9 +4,9 @@ import './Footer.css';
 class Footer extends React.Component{
     render(){
         return(
-            <p>Copyright </p>
+            <p>Copyright &copy; </p>
         )
     }
 }
 
-export default Footer
+export default Footer;
