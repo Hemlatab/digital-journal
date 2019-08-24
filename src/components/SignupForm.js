@@ -42,10 +42,10 @@ class SignupForm extends React.Component{
                     <h2>Signup</h2>
                     
                        <Input type="text" name="fullname" value={fullname} placeholder="Fullname" handleChange={this.handleChange} required />
-                       <Input type="email" name="email" value={email} placeholder="email" handleChange={this.handleChange} required />
-                       <Input type="password" name="password" value={password} placeholder="password" handleChange={this.handleChange} required />
-                       <Input type="password" name="confirmPassword" value={confirmPassword} placeholder="confirmPassword" handleChange={this.handleChange} required />
-                        <Button label="Signup"/>
+                       <Input type="email" name="email" value={email} placeholder="Email" handleChange={this.handleChange} required />
+                       <Input type="password" name="password" value={password} placeholder="Password" handleChange={this.handleChange} required />
+                       <Input type="password" name="confirmPassword" value={confirmPassword} placeholder="Confirm Password" handleChange={this.handleChange} required />
+                      <Button label="Signup"/>
                         </form>
                     </div>
                 )

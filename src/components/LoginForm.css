@@ -1,7 +1,8 @@
 body {
   height: 100%;
 }
-h2 {
+.login-form h2 {
+  text-align: center;
   color: #87ab7b;
 }
 .login-form {
