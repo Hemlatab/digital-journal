@@ -5,7 +5,6 @@ import './LoginForm.css';
 import Input from './Input';
 import Button from './Button';
 
-
 class LoginForm extends React.Component{
     state={
         email:'',

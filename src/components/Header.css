@@ -9,7 +9,18 @@
   text-decoration: none;
   margin-left: 10px;
 }
+.username {
+  margin-right: 10px;
+  font-weight: bold;
+}
 
+.logout {
+  padding: 10px 15px;
+  margin: 8px;
+  border-radius: 22px;
+  background-color: #0080fc;
+  color: #fff;
+}
 h2 {
   color: #87ab7b;
 }
