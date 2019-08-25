@@ -6,7 +6,9 @@ class Loader extends React.Component{
 
     return(
 
+        <div className="loader-container">
         <div className="loader"></div>
+        </div>
 
     )
 }
