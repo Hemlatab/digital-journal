@@ -7,10 +7,12 @@
 ## Technologies Used
 
 ### Languages and Frameworks
+
 		* HTML
 		* CSS
 		* React
-    		* Firebase 
+		* Firebase 
+    		
 		
 
 
