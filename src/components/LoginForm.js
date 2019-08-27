@@ -40,9 +40,19 @@ class LoginForm extends React.Component{
             <div className="login-form">
             <form onSubmit={this.handleSubmit}>
             <h2>Login</h2>
-            <Input type="text" name="email" value={email} placeholder="Email" handleChange={this.handleChange} required />
-            <Input type="password" name="password" value={password} placeholder="Password" handleChange={this.handleChange} required />
-            <Button label="Login" disabled={this.state.isLoggedIn}/>
+            <Input type="text" 
+            name="email" 
+            value={email} 
+            placeholder="Email" 
+            handleChange={this.handleChange} required />
+
+            <Input type="password" 
+            name="password" 
+            value={password} 
+            placeholder="Password" 
+            handleChange={this.handleChange} required />
+            <Button label="Login" 
+            disabled={this.state.isLoggedIn}/>
             </form>
             </div>
         );
