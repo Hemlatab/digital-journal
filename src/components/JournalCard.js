@@ -5,15 +5,22 @@ import './JournalCard.css';
 const JournalCard =(props) => {
 
 //destructure
-    const {title,body} = props;
+    const {title,body,handleDelete,id,handleUpdate} = props;
 
         return(
             <div className="note-card">
                 <h2>{title}</h2>
                 <p>{body}</p>
                 <ul>
-                    <li className="edit"><a href="/">Edit</a></li>
-                    <li className="delete"><a href="/">Delete</a></li>
+                    <li className="edit">
+                    <button type="button" 
+                    className="edit"
+                    onClick={()=>handleUpdate(id)}>Edit</button></li>
+
+                    <li className="delete">
+                    <button type="button" 
+                    className="delete"
+                    onClick={()=> handleDelete(id)}>Delete</button></li>
                 </ul>
             </div>
         )

@@ -18,8 +18,13 @@
   padding: 10px 15px;
   margin: 8px;
   border-radius: 22px;
-  background-color: #0080fc;
+  border: 2px solid #fff;
+  font-weight: bold;
+  background-color: transparent;
   color: #fff;
+}
+.logout:hover {
+  background-color: #044841;
 }
 h2 {
   color: #87ab7b;

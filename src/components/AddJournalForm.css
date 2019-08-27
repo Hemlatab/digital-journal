@@ -13,6 +13,7 @@ form {
 input [type="text"] {
   padding: 12px 20px;
 }
+
 .journal-title {
   padding: 12px 20px;
   box-sizing: border-box;
@@ -23,6 +24,7 @@ input [type="text"] {
   resize: none;
   margin: 15px 0;
 }
+
 textarea {
   padding: 12px 20px;
   box-sizing: border-box;
@@ -32,6 +34,7 @@ textarea {
   font-size: 16px;
   resize: none;
 }
+
 .body-para {
   color: lightslategray;
   font-size: 14px;

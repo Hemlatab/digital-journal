@@ -12,12 +12,11 @@ const config ={
     appId: "1:985958482611:web:6f05be8d075c5100"
   };
 
-
 class  Firebase{
 constructor(){
     app.initializeApp(config)
     this.auth = app.auth()
-    this.db =app.firestore()
+    this.db = app.firestore()
 }
    
 login(email,password){
@@ -33,6 +32,26 @@ async register(name,email,password){
         displayName:name
     })
 }
+addNote(note) {
+    if (!this.auth.currentUser) {
+      return null;
+    }
+    this.db
+      .collection('digital_notes')
+      .doc(this.auth.currentUser.uid)
+      .collection('notes')
+      .add({
+        title: note.title,
+        body: note.body,
+        timestamp: app.firestore.FieldValue.serverTimestamp(),
+      })
+      .then(docRef => {
+        console.log('Document written with ID', docRef.id);
+      })
+      .catch(error => {
+        console.log('Error adding document', error);
+      });
+  }
 
 isInitialized() {
     return new Promise(resolve => {
@@ -44,13 +63,48 @@ getCurrentUsername() {
     return this.auth.currentUser && this.auth.currentUser.displayName
 }
 
-// getCurrentUsername() {
-//     if(this.auth.currentUser){
-//         return {isAuthenticated:true,username:this.auth.currentUser.displayName}
-
-//     }
-//     return {isAuthenticated:false}
-// }
+loadNotes() {
+    // Create the query to load the last 12 messages and listen for new ones.
+    var query = this.db.collection('notes')
+                  
+    // Start listening to the query.
+    query.onSnapshot(function(snapshot) {
+      snapshot.docChanges().forEach(function(change) {
+        var message = change.doc.data();
+        console.log(message);
+        return message;
+      });
+    });
+  }
+  updateNote(id,note){
+    this.db
+      .collection('digital_notes')
+      .doc(this.auth.currentUser.uid)
+      .collection('notes')
+      .doc(id)
+      .update(note)
+      .then(() => {
+        console.log('Document updated');
+      })
+      .catch(error => {
+        console.log('Error updating document', error);
+      });
+  
+  }
+  deleteNote(id){
+    this.db
+    .collection('digital_notes')
+    .doc(this.auth.currentUser.uid)
+    .collection('notes')
+    .doc(id)
+    .delete()
+    .then(() => {
+      console.log('Document deleted');
+    })
+    .catch(error => {
+      console.log('Error removing document', error);
+    });
+  }
 
 }
 

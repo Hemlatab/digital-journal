@@ -7,10 +7,12 @@
   border-radius: 6px;
   margin: 10px;
 }
+
 .note-card h2 {
   text-align: center;
   margin-top: 6px;
 }
+
 .note-card ul {
   list-style: none;
 }
@@ -20,15 +22,19 @@
 }
 
 .edit {
-  color: #0080fc;
+  background-color: #0080fc;
   display: inline;
-  margin-right: 100px;
+  padding: 6px;
+  margin: 5px;
+  color: #fff;
+  border-radius: 5px;
 }
+
 .delete {
   text-align: right;
   display: inline;
-}
-
-.delete a {
-  color: red;
+  background-color: red;
+  padding: 6px;
+  color: #fff;
+  border-radius: 5px;
 }
