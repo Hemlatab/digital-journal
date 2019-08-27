@@ -24,17 +24,15 @@
 .edit {
   background-color: #0080fc;
   display: inline;
-  padding: 6px;
   margin: 5px;
-  color: #fff;
   border-radius: 5px;
+  color: #fff;
 }
 
 .delete {
   text-align: right;
   display: inline;
   background-color: red;
-  padding: 6px;
-  color: #fff;
   border-radius: 5px;
+  color: #fff;
 }
