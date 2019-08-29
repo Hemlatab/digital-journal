@@ -7,7 +7,7 @@ import SignupForm from './SignupForm';
 import Home from './Home';
 //import Footer from './Footer';
 import Header from './Header';
-import Loader from './Loader';
+//import Loader from './Loader';
 
 class App extends React.Component {
   state={
@@ -22,7 +22,7 @@ class App extends React.Component {
   }
   render(){
 
-  return this.state.firebaseInitialized !== false ? (
+  return  (
     <Router>
       
     <div className="App">
@@ -36,7 +36,7 @@ class App extends React.Component {
       {/* <Footer /> */}
     </div>
     </Router>
-  ):(<Loader />)
+  )
 
 
   }
