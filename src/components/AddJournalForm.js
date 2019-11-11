@@ -15,6 +15,8 @@ const AddJournalForm =(props)=>{
                 value={title} 
                 onChange={handleChange} 
                 placeholder="Title"/>
+                <span>This should be a short summary of your note</span>
+                <br/>
 
                 <textarea rows="5" 
                 placeholder="Body" 
