@@ -27,6 +27,7 @@
   margin: 5px;
   border-radius: 5px;
   color: #fff;
+  font-weight: 700;
 }
 
 .delete {
@@ -35,4 +36,5 @@
   background-color: red;
   border-radius: 5px;
   color: #fff;
+  font-weight: 700;
 }

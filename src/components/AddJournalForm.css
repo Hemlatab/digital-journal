@@ -39,3 +39,7 @@ textarea {
   color: lightslategray;
   font-size: 14px;
 }
+.summary{
+  font-size: 10px;
+  font-weight: 600;
+}
