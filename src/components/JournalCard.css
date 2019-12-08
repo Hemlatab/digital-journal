@@ -23,7 +23,7 @@
 
 .edit {
   background-color: #0080fc;
-  display: inline;
+  display: inline-block;
   margin: 5px;
   border-radius: 5px;
   color: #fff;
@@ -31,9 +31,9 @@
 }
 
 .delete {
-  text-align: right;
-  display: inline;
+  display: inline-block;
   background-color: red;
+  margin:5px;
   border-radius: 5px;
   color: #fff;
   font-weight: 700;

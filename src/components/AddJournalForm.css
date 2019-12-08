@@ -1,4 +1,3 @@
-
 .col-1{
   font-size: 20px;
   color: #374955;
@@ -7,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .col-2{
   background-image: url('../images/notes.png');
